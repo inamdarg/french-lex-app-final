@@ -1,9 +1,14 @@
-
 'use client';
-import React from "react";
-export const Card = ({ children }) => (
-  <div className="border rounded shadow bg-white">{children}</div>
-);
-export const CardContent = ({ children }) => (
-  <div className="p-4">{children}</div>
-);
+import React from 'react';
+
+type DivProps = React.HTMLAttributes<HTMLDivElement>;
+
+export function Card({ className = '', ...props }: DivProps) {
+  return (
+    <div className={`border rounded shadow bg-white ${className}`} {...props} />
+  );
+}
+
+export function CardContent({ className = '', ...props }: DivProps) {
+  return <div className={`p-4 ${className}`} {...props} />;
+}
