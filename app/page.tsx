@@ -39,7 +39,7 @@ export default function Page() {
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
+    recognition.onresult = (event: any) => {
       const transcript = event.results[0][0].transcript.trim();
       const correct =
         transcript.toLowerCase() === words[currentIndex].word.toLowerCase();
