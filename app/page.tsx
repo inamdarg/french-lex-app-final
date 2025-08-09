@@ -93,7 +93,7 @@ export default function Page() {
       alert('Please connect your Instagram account first.');
       return;
     }
-    const message = `📚 Lex French Learning Report\nScore: ${score}/${words.length}\n#LearnFrench #DailyFrench #LexLearns`;
+    const message = `📚 Girish French Learning Report\nScore: ${score}/${words.length}\n#LearnFrench #DailyFrench #LexLearns`;
     console.log('Posting to Instagram:', message);
     setSummaryPublished(true);
   };
@@ -104,7 +104,7 @@ export default function Page() {
 
   return (
     <div className="p-6 max-w-xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center">🇫🇷 Learn French with Lex</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">🇫🇷 Learn French with Girish</h1>
 
       {!instagramConnected && (
         <div className="text-center mb-6">
